@@ -1,0 +1,73 @@
+.<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+    body {
+        background: linear-gradient(to bottom, #40659E, #97A7CF)
+    }
+
+    form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 40px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 8px 115px;
+            border-radius: 20px;
+            border: white;
+            display: block;
+            margin: 60px auto; 
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000000;
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Անուն" required><br><br>
+
+        <label for="surname"></label>
+        <input type="text" id="surname" name="surname" placeholder="Ազգանուն" required><br><br>
+        
+        <label for="age"></label>
+        <input type="number" id="age" name="age" placeholder="Տարիք" required><br><br>
+        
+        <label for="class_number"></label>
+        <input type="text" id="class_number" name="class_number" placeholder="Կուրս" required><br><br>
+    </form>
+        
+        <button id="login">գրանցում</button>
+       
+
+        <script>
+      document.getElementById('login').addEventListener('click', function() {
+      window.location.assign('2.html');
+     }); 
+        </script>
+</body>
+</html>

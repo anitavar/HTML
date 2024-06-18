@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>մեկնարկ</title>
+        <style>
+            body {
+                background: linear-gradient(to right, #40659E, #97A7CF)
+            }
+            
+            p {
+                font-style: bold;
+                color: white;
+            }
+            
+            .text {
+                text-align: center;
+            }
+            
+            button {
+                padding: 8px 80px;
+                border-radius: 20px;
+                border: white;
+                display: block;
+                margin: 60px auto; 
+                cursor: pointer;
+            }
+            
+            button:hover {
+                background: black;
+                color: rgb(255, 255, 255);
+            }
+            </style>
+    </head>
+    <body>
+        <p class="text">Քո դասական ուղղագրութիւնից ստացած գիտելիքբերը կարող ես սռուգել սեղմելով «խաղալ» կոճակին</p>
+        <button id="game">խաղալ</button>
+        <script>
+            document.getElementById('game').addEventListener('click', function() {
+            window.location.assign('3.html');
+           }); 
+              </script>
+    </body>
+</html>
+

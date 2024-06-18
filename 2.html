@@ -1,0 +1,45 @@
+.<!DOCTYPE html>
+<html>
+    <head>
+        <title>ընտրութիւն</title>
+        <style>    
+            body {
+            background: linear-gradient(to bottom, #40659E, #97A7CF)
+            }
+
+            button {
+                cursor: pointer;
+            }
+
+            button:hover {
+            background: black;
+            color: rgb(255, 255, 255);
+            }
+
+            #butt, #buttt {
+            padding: 8px 80px;
+            border-radius: 20px;
+            border: white;
+            display: block;
+            margin: 0 auto;
+            }
+
+            #butt {
+            margin-top: 150px;
+            margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="butt">Գրաբար</button>
+        <button id="buttt">Դասական</button>
+        <script>
+            document.getElementById('butt').addEventListener('click', function() {
+                window.location.href = 'main02.html';
+            });
+            document.getElementById('buttt').addEventListener('click', function() {
+                window.location.href = 'main.html';
+            });
+        </script>
+    </body>
+</html>
